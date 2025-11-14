@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import memoji from './assets/jessica_memoji.png'
 import resume from './assets/resume_website.pdf'
 import swift from './assets/swift.png'
@@ -14,8 +13,6 @@ import giftmessaging from './assets/giftmessaging.jpg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const handleOpenInBrowser = () => {
     window.open(resume, '_blank');
   };
