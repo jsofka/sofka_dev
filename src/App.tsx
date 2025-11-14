@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import memoji from './assets/jessica_memoji.png'
-import resume from './assets/resume.pdf'
+import resume from './assets/resume_website.pdf'
 import swift from './assets/swift.png'
 import swiftui from './assets/swiftui.png'
 import xcode from './assets/xcode.png'
