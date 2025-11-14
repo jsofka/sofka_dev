@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  text-align: center;
+}
+
+.circle {
+  width: 15px;
+  height: 15px; 
+  border-radius: 50%; 
+  display: inline-block; 
+}
+
+.red {
+  background-color: #FF605C;
+}
+
+.yellow {
+  background-color:#FFBD44;
+}
+
+.green {
+  background-color: #00CA4E;
+}
+
+.jessica {
+  height: auto;
+  width: 40vw;
+  aspect-ratio: 1 / 1;
+  max-width: 200px;
+}
+
+.skillsImg {
+  height: auto;
+  width: 8vw;
+  aspect-ratio: 1 / 1;
+  max-width: 50px;
+}
+
+.figma {
+  height: auto;
+  width: 7vw;
+  aspect-ratio: 1 / 1;
+  max-width: 40px;
+}
+
+.experienceImg {
+  height: auto;
+  width: 10vw;
+  aspect-ratio: 1 / 1;
+  max-width: 80px;
+}
+
+.targetImg {
+  height: auto;
+  width: 10vw;
+}
+
