@@ -20,18 +20,22 @@ function App() {
   return (
     <>
       <div className="bg-linear-120 min-h-screen h-fit w-screen from-rose-300 via-purple-400 to-sky-400 flex justify-center items-center">
-        <div className="bg-white/50 rounded-3xl p-6 m-10 h-fit w-[70vw] flex justify-between">
+        <div className="bg-white/50 rounded-3xl p-6 m-10 h-fit w-[70vw] justify-around md:flex">
           <div className="flex gap-2 w-18">
             <div className="circle red"></div>
             <div className="circle yellow"></div>
             <div className="circle green"></div>
           </div>
-          <div>
-            <div className="bg-white/50 rounded-3xl p-6 m-10 h-fit w-fit max-w-1500 flex justify-between">
+          <div className="w-full">
+            <div className="bg-white/50 rounded-3xl p-6 m-10 h-fit w-[80%] overflow-hidden justify-between lg:flex xl:w-[90%] lg:w-[85%] md:w-[80%]">
+              <div className="justify-start content-center w-[20vw] lg:hidden">
+                <img src={memoji} className="jessica" />
+              </div>
               <div className="justify-around text-left content-center space-y-4">
-                <p className="text-2xl font-semibold">hi im jessica!</p>
-                <p className="text-xl">
-                  Experienced iOS engineer with a strong foundation in native app development in Swift and SwiftUI. Deeply passionate about usability and user-centered design to create iOS apps that are both beautiful and incredibly effective.
+                <p className="text-base font-semibold text-lg lg:text-2xl">hi im jessica!</p>
+                <p className="text-base text-md lg:text-xl ">
+                  Experienced iOS engineer with a strong foundation in native app development in Swift and SwiftUI. 
+                  Deeply passionate about usability and user-centered design to create iOS apps that are both beautiful and incredibly effective.
                 </p>
                 <button 
                   className="px-4 py-6 bg-blue-500 text-white rounded hover:bg-blue-700 rounded-3xl"
@@ -40,7 +44,7 @@ function App() {
                   Resume
                 </button>
               </div>
-              <div className="justify-end content-center">
+              <div className="justify-end content-center hidden lg:block">
                 <img src={memoji} className="jessica" />
               </div>
             </div>
@@ -52,7 +56,7 @@ function App() {
 
               {/* first row */}
               <div className="justify-center flex">
-                <div className="bg-white/50 rounded-3xl p-6 m-10 h-fit w-[15vw] max-w-1500 flex space-x-4 items-center justify-start">
+                <div className="bg-white/50 rounded-3xl p-6 m-10 h-fit w-[15vw] max-w-1500 lg:flex space-x-4 items-center justify-start">
                   <img src={swift} className="skillsImg"/>
                   <div className="flex flex-col items-start justify-start text-left">
                     <p className="text-lg font-semibold">Swift</p>
@@ -60,7 +64,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="bg-white/50 rounded-3xl p-6 m-10 h-fit w-[15vw] max-w-1500 flex space-x-4 items-center justify-start">
+                <div className="bg-white/50 rounded-3xl p-6 m-10 h-fit w-[15vw] max-w-1500 lg:flex space-x-4 items-center justify-start">
                   <img src={swiftui} className="skillsImg"/>
                   <div className="flex flex-col items-start justify-start text-left">
                     <p className="text-lg font-semibold">SwiftUI</p>
@@ -68,7 +72,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="bg-white/50 rounded-3xl p-6 m-10 h-fit w-[15vw] max-w-1500 flex space-x-4 items-center justify-start">
+                <div className="bg-white/50 rounded-3xl p-6 m-10 h-fit w-[15vw] max-w-1500 lg:flex space-x-4 items-center justify-start">
                   <img src={xcode} className="skillsImg"/>
                   <div className="flex flex-col items-start justify-start text-left">
                     <p className="text-lg font-semibold">Xcode</p>
@@ -79,7 +83,7 @@ function App() {
 
               {/* second row */}
               <div className="justify-center flex">
-                <div className="bg-white/50 rounded-3xl p-6 m-10 mt-2 h-fit w-[15vw] max-w-1500 flex space-x-4 items-center justify-start">
+                <div className="bg-white/50 rounded-3xl p-6 m-10 mt-2 h-fit w-[15vw] max-w-1500 lg:flex space-x-4 items-center justify-start">
                   <img src={afterEffects} className="skillsImg"/>
                   <div className="flex flex-col items-start justify-start text-left">
                     <p className="text-md font-semibold">After Effects</p>
@@ -87,7 +91,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="bg-white/50 rounded-3xl p-6 m-10 mt-2 h-fit w-[15vw] max-w-1500 flex space-x-4 items-center justify-start">
+                <div className="bg-white/50 rounded-3xl p-6 m-10 mt-2 h-fit w-[15vw] max-w-1500 lg:flex space-x-4 items-center justify-start">
                   <img src={figma} className="skillsImg"/>
                   <div className="flex flex-col items-start justify-start text-left">
                     <p className="text-lg font-semibold">Figma</p>
@@ -95,7 +99,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="bg-white/50 rounded-3xl p-6 m-10 mt-2 h-fit w-[15vw] max-w-1500 flex space-x-4 items-center justify-start">
+                <div className="bg-white/50 rounded-3xl p-6 m-10 mt-2 h-fit w-[15vw] max-w-1500 lg:flex space-x-4 items-center justify-start">
                   <img src={python} className="skillsImg"/>
                   <div className="flex flex-col items-start justify-start text-left">
                     <p className="text-lg font-semibold">Python</p>
